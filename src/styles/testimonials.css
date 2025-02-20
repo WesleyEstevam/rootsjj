@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 48px;
+  flex-wrap: wrap; /* Permite adaptação para telas menores */
 }
 
 #testimonial_chef {
@@ -12,7 +13,8 @@
 }
 
 #testimonials img {
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 #testimonials .section-subtitle {
@@ -58,6 +60,7 @@
   color: var(--color-primary-6);
 }
 
+/* 🔹 Ajuste para telas menores (Tablets e Mobile) */
 @media screen and (max-width: 1170px) {
   #testimonials {
     flex-direction: column;
@@ -69,7 +72,8 @@
   }
 
   #testimonial_chef {
-    display: none;
+    width: 250px; /* Reduz tamanho em telas menores */
+    display: block;
   }
 
   #testimonials_content {
@@ -80,9 +84,21 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+/* 🔹 Ajuste específico para celulares */
+@media screen and (max-width: 768px) {
+  #testimonials {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
   #testimonials .section-subtitle {
     font-size: 2rem;
+  }
+
+  #testimonial_chef {
+    width: 180px; /* Mantém imagem no mobile */
+    display: block;
   }
 
   #testimonials_content {
@@ -91,5 +107,11 @@
 
   .feedback {
     flex-direction: column;
+    text-align: center;
+  }
+
+  .feedback-avatar {
+    width: 80px; /* Reduz tamanho do avatar */
+    height: 80px;
   }
 }
