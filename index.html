@@ -133,15 +133,21 @@
         <div id="testimonials_content">
           <h2 class="section-title">Kalil Mendes e Nayra 🥋🔥</h2>
           <div id="feedbacks">
+            <h3>Sobre Kalil</h3>
+            
             <div class="feedback">
                 <p>
-                  Respeitado por sua trajetória e conhecimento no jiu-jitsu, o mestre Kalil Mendes é uma referência 
-                  dentro e fora dos tatames. Com anos de experiência, ele representa a verdadeira essência da arte
-                   suave, unindo técnica refinada, mentalidade estratégica e um compromisso inabalável com a formação
-                    de atletas e seres humanos melhores. Sua filosofia vai além das competições, ele acredita que o jiu-jitsu
-                    é uma ferramenta poderosa de transformação, capaz de moldar caráter, fortalecer o espírito e ensinar lições
-                    que se aplicam à vida. Seu legado é forjado na dedicação, na busca pelo aperfeiçoamento e na inspiração 
-                    que transmite a cada aluno que cruza seu caminho.
+                  Natural de Ibaretama, no Sertão Central do Ceará, Kalil saiu de casa aos 17 anos em busca de novas oportunidades em São Paulo, onde conciliou trabalho e faculdade. Após se formar, retornou a Fortaleza, onde em 2018 conheceu o Jiu Jitsu e nunca mais deixou os tatames. É aluno de Pedro Henrique, fundador da Snakes Jiu Jitsu.
+                  Com o crescimento do Roots Jiu Jitsu, Kalil deixou sua carreira de mais de 7 anos como Desenvolvedor de Negócios na área de tecnologia para se dedicar integralmente ao esporte. Hoje, ao lado de sua esposa Nayra, lidera o CT Roots com foco em ensinar, evoluir e fortalecer o Jiu Jitsu em sua comunidade.
+                </p>
+            </div>
+            <h3>Sobre Nayra</h3>
+              <div class="feedback">
+
+                <p>
+                  Nayra, é natural de Aquiraz, vem de uma família simples e desde cedo aprendeu o valor do trabalho e dedicação.
+                  Iniciou seus estudos em Pedagogia após 4 semestres, trancou a faculdade e começou a cursar Enfermagem. Atualmente, une seus conhecimentos em Pedagogia e Enfermagem para atuar com turmas Baby Kids no CT Roots Jiu Jitsu, oferecendo um ambiente seguro e estimulante. Com sensibilidade e paciência, foca no desenvolvimento psicomotor das crianças, promovendo seu crescimento integral com carinho e profissionalismo.
+                  Mais do que ensinar Jiu Jitsu, Nayra contribui para o crescimento integral de cada criança que passa pelo tatame — sempre com carinho, profissionalismo e o compromisso de fazer a diferença.
                 </p>
               </div>
             </div>
@@ -223,65 +229,48 @@
         </table>
       </section>
 
-      <section id="treinos">
-        <h2 class="titulo-secao">Plano Mensal</h2>
-        <div className="plano-container">
-          <div className="plano-title">
-            <h2 className="plano-subtitle">PLANO MENSAL</h2>
-            <h1 className="plano-main-title">CT ROOTS JIU JITSU</h1>
-          </div>
-    
-          <div className="plano-cards">
-            {/* Cartão JIU JITSU */}
-            <div className="plano-card jiu-jitsu-card">
-              <div className="plano-card-header">
-                <h3 className="plano-card-title">JIU JITSU</h3>
-                <p className="plano-card-price">$70</p>
-              </div>
-              <div className="plano-card-content">
-                <div className="plano-feature">1 HORÁRIO FIXO</div>
-                <div className="plano-card-divider"></div>
-                <div className="plano-feature">EX: TREINOS SOMENTE ÀS 19:30</div>
-                <div className="plano-card-divider"></div>
-                <div className="plano-feature">ACESSO DE UMA AULA POR DIA</div>
-              </div>
-            </div>
-    
-            {/* Cartão Wrestling */}
-            <div className="plano-card wrestling-card">
-              <div className="plano-card-header">
-                <h3 className="plano-card-title">Wrestling</h3>
-                <p className="plano-card-price">$60</p>
-              </div>
-              <div className="plano-card-content">
-                <div className="plano-feature">1 HORÁRIO FIXO</div>
-                <div className="plano-card-divider"></div>
-                <div className="plano-feature">ACESSO A 2 AULAS SEMANAIS</div>
-              </div>
-            </div>
-    
-            {/* Cartão MMA */}
-            <div className="plano-card mma-card">
-              <div className="plano-card-header">
-                <h3 className="plano-card-title">MMA</h3>
-                <p className="plano-card-price">$80</p>
-              </div>
-              <div className="plano-card-content">
-                <div className="plano-feature">1 HORÁRIO FIXO</div>
-                <div className="plano-card-divider"></div>
-                <div className="plano-feature">ACESSO A 2 AULAS SEMANAIS</div>
-              </div>
-            </div>
-          </div>
-    
-          <div className="plano-info">
-            <p>+1 horário de Jiu Jitsu será acrescido $25.</p>
-            <p>Ex: Treino às 19:30h+ 21h.</p>
-            <p>Valor: $95</p>
+      <div class="plans-container">
+        <div class="plan-card plan-bjj-wrestling">
+          <div class="plan-header">BJJ + Wrestling</div>
+          <div class="plan-price">$100</div>
+          <div class="plan-details">
+            3 horários fixos<br>
+            Ex: BJJ 21h + Wrestling 12:30 + BJJ 19:30<br>
+            Acesso de 3 aulas por dia
           </div>
         </div>
-      </section>
-
+      
+        <div class="plan-card plan-bjj-mma">
+          <div class="plan-header">BJJ + MMA</div>
+          <div class="plan-price">$120</div>
+          <div class="plan-details">
+            3 horários fixos<br>
+            Ex: BJJ 21h + MMA 17h + BJJ 19:30<br>
+            Acesso de 3 aulas por dia
+          </div>
+        </div>
+      
+        <div class="plan-card plan-full">
+          <div class="plan-header">BJJ + MMA + Wrestling</div>
+          <div class="plan-price">$150</div>
+          <div class="plan-details">
+            Acesso a todos os horários de treinos por dia
+          </div>
+        </div>
+      
+        <div class="plan-card plan-kids">
+          <div class="plan-header">Plano Kids (Nível 2)</div>
+          <div class="plan-price">$80</div>
+          <div class="plan-details">
+            1 horário fixo<br>
+            Crianças de 8 a 11 anos<br>
+            Terça, Quinta e Sexta<br>
+            Treino às 18:15h<br>
+            Acesso de uma aula por dia
+          </div>
+        </div>
+      </div>
+      
       <section id="products">
         <h2 class="section-title">Nossos Produtos</h2>
         <div class="product-container">
